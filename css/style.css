@@ -50,25 +50,74 @@
 html {
     --tusker: 'Tusker Grotesk', Arial, sans-serif;
     --moderat: 'Moderat', Arial, sans-serif;
+
+    --lennox-tan: #FDF9F1;
+    --lennox-white: #FFF;
+    --lennox-black: #222222;
+    --lennox-green: #D4E377;
+    --lennox-red: #EF5A30;
+    --lennox-orange: #FEAE33;
+    --lennox-gray: #8D8D8D;
+    --lennox-lightgray: #CECBCB;
+    --lennox-darkgray: #4F4F4F;
+}
+
+header {
+    align-items: center;
+    background-color: var(--lennox-black);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    width: 100%;
 }
 
 body {
+    background-color: var(--lennox-tan);
+    margin: 0;
+}
+
+main {
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
 }
 
 h1 {
+    color: var(--lennox-white);
     font-family: var(--tusker);
+    margin: 0;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
     font-family: var(--moderat);
     font-weight: 500;
+    margin-bottom: 0.25rem;
     text-align: center;
 }
 
+h3 {
+    color: var(--lennox-red);
+    font-family: var(--moderat);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 p {
+    color: var(--lennox-black);
     font-family: var(--moderat);
     font-weight: 300;
+    line-height: 125%;
+}
+
+.card {
+    background-color: var(--lennox-white);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(34, 34, 34, 0.05);
+    margin: 1rem 0;
+    padding: 1rem 10rem;
 }
