@@ -83,7 +83,7 @@ body {
 
 main {
     margin: 0 auto;
-    width: 75%;
+    width: 50%;
 }
 
 h1 {
@@ -97,7 +97,7 @@ h1 {
 h2 {
     font-family: var(--moderat);
     font-weight: 500;
-    margin-bottom: 0.25rem;
+    margin: 0.25rem 0;
     text-align: center;
 }
 
@@ -112,17 +112,72 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    color: var(--lennox-darkgray);
+    font-family: var(--moderat);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
 p {
     color: var(--lennox-black);
     font-family: var(--moderat);
     font-weight: 300;
     line-height: 125%;
+    margin-top: 0;
+    text-indent: 2.5rem;
+}
+
+a {
+    color: var(--lennox-red);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--lennox-orange);
+    text-decoration: underline;
+}
+
+ul {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+li {
+    background-image: url("../images/lennox-heart.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1rem;
+    list-style: none;
+    padding: 0.25rem 2rem;
+}
+
+li p {
+    margin: 0;
+    text-indent: 0;
 }
 
 .card {
+    align-items: center;
     background-color: var(--lennox-white);
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(34, 34, 34, 0.05);
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
-    padding: 1rem 10rem;
+    padding: 1rem 12.5rem;  
+}
+
+.card img {
+    border: solid 2px var(--lennox-red);
+    border-radius: 10px;
+    max-width: 150%;
+}
+
+.caption {
+    color: var(--lennox-darkgray);
+    margin-top: 0.5rem;
+    text-align: center;
+    text-indent: 0;
 }
