@@ -71,6 +71,11 @@ header {
     width: 100%;
 }
 
+header img {
+    margin-right: 0.5rem;
+    max-width: 2rem;
+}
+
 body {
     background-color: var(--lennox-tan);
     margin: 0;
